@@ -4,7 +4,7 @@
  * main - Entry point
  * Description: A C progam that prints with pritf function.
  *
- * Return: Always 0 (Succes)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
