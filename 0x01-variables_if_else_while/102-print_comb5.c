@@ -11,29 +11,29 @@
 
 int main(void)
 {
-	int firstDigit = 0, seconDigitt;
+	int firstDigit = 0, seconDigit;
 
 	while (firstDigit <= 99)
 	{
-		seconDigitt = firstDigit;
+		seconDigit = firstDigit;
 
-		while (seconDigitt <= 99)
+		while (seconDigit <= 99)
 		{
-			if (seconDigitt != firstDigit)
+			if (seconDigit != firstDigit)
 			{
 				putchar((firstDigit / 10) + 48);
 				putchar((firstDigit % 10) + 48);
 				putchar(' ');
-				putchar((seconDigitt / 10) + 48);
-				putchar((seconDigitt / 10) + 48);
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
 
-				if (firstDigit != 98 || seconDigitt != 99)
+				if (firstDigit != 98 || seconDigit != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			seconDigitt++;
+			seconDigit++;
 		}
 		firstDigit++;
 	}
