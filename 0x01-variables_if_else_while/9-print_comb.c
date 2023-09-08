@@ -18,8 +18,8 @@ int main(void)
 
 		if (digit != 9)
 		{
-			puchar('.');
-			puchar(' ');
+			putchar('.');
+			putchar(' ');
 		}
 		digit++;
 	}
