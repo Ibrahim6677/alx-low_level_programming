@@ -19,6 +19,6 @@ int main(void)
 		sum += c;
 		putchar(c);
 	}
-	putchar(27272 - sun);
+	putchar(27272 - sum);
 	return (0);
 }
