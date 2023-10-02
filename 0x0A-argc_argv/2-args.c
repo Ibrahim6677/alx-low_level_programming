@@ -6,7 +6,7 @@
 		
 /**
 		
- * main - prints the name of the program
+ * main - prints all arguments it receives
 		
  * @argc: number of arguments
 		
@@ -18,11 +18,20 @@
 		
  */
 		
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 		
 {
+int i;
 		
-	printf("%s\n", *argv);
+
+		
+	for (i = 0; i < argc; i++)
+		
+	{
+		
+		printf("%s\n", argv[i]);
+		
+	}
 		
 
 		
