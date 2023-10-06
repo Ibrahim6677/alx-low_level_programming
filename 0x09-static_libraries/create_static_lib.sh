@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -c $CFILE -o $(echo $CFILE | cut -d.  -f1).o
+gcc -Wall -pedantic -Werror -Wextra -c *.c
+ar -rc liball.a *.o
+ranlib liball.a
