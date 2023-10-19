@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "list.h"
 
 /**
@@ -26,7 +27,7 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)";
+		printf("[%u] %s\n", _strlen(h->str), h->str ? h->str : "(nil)";
 		h = h->next;
 		i++;
 	}
