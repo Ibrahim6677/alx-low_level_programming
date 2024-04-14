@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "search_algos.h"
 /**
- * advanced_binary_recursive - searches for a value in a sorted array of integers
+ *advanced_binary_recursive -searches for a value in a sorted array of integers
  * using advanced binary search algorithm recursively
  * @array: pointer to the first element of the array to search in
  * @start: starting index of the array
@@ -31,18 +31,18 @@ int advanced_binary_recursive(int *array, size_t start, size_t end, int value)
 	if (array[mid] == value)
 	{
 		if (mid == 0 || array[mid - 1] != value)
-			return mid;
+			return (mid);
 		else
-			return advanced_binary_recursive(array, start, mid, value);
+			return (advanced_binary_recursive(array, start, mid, value));
 	}
 
 		if (array[mid] < value)
-			return advanced_binary_recursive(array, mid + 1, end, value);
+			return (advanced_binary_recursive(array, mid + 1, end, value));
 
-		return advanced_binary_recursive(array, start, mid, value);
+		return (advanced_binary_recursive(array, start, mid, value));
 	}
 
-	return -1;
+	return (-1);
 }
 
 /**
@@ -58,7 +58,7 @@ int advanced_binary_recursive(int *array, size_t start, size_t end, int value)
 int advanced_binary(int *array, size_t size, int value)
 {
 	if (array == NULL || size == 0)
-		return -1;
+		return (-1);
 
-	return advanced_binary_recursive(array, 0, size - 1, value);
+	return (advanced_binary_recursive(array, 0, size - 1, value));
 }
